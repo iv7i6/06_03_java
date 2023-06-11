@@ -20,10 +20,10 @@ jobs:
       - name: Setup Java
         uses: actions/checkout@v3
         with:
-          distribution: 'temurin'
+          distribution: 'Temurin'
           java-version: '17'
       - name: Build & Deploy
         run:
-          mvn -B deploy
+           mvn -B deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
