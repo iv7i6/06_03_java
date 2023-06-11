@@ -15,10 +15,10 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout Code
-        uses: actions/iv7i6@v3
+        uses: actions/checkout@v3
       # TODO: укажите нужные значения для action setup-java
       - name: Setup Java
-        uses: actions/iv7i6@v3
+        uses: actions/checkout@v3
         with:
           distribution: 'temurin'
           java-version: '17'
